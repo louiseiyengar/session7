@@ -1,0 +1,27 @@
+{
+  "name": "session7",
+  "version": "1.0.0",
+  "description": "## Homework",
+  "main": "index.js",
+  "scripts": {
+    "sassy": "node-sass --watch \"scss\" --output \"app/css\" --recursive --source-map true",
+    "start": "browser-sync start --server \"app\" --files \"app\"",
+    "boom!": "concurrently \"npm run start\" \"npm run sassy\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/front-end-foundations/session7.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/front-end-foundations/session7/issues"
+  },
+  "homepage": "https://github.com/front-end-foundations/session7#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "concurrently": "^4.0.1",
+    "node-sass": "^4.9.4"
+  }
+}
